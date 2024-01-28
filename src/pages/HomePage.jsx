@@ -51,17 +51,75 @@ const HomePage = () => {
           </div>
           <img src="src\assets\img\YP5.jpg" className="card-img-bottom" alt="The Palace" />
         </div>
+ 
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36303033_1.jpg" className="card-img-top" alt="Menu" />
+          
+        </div>
+      </div>
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36663367_1.png" className="card-img-top" alt="Best Sellers" />
+          
+        </div>
+      </div>
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36663370_1.png" className="card-img-top" alt="Food options" />
+          
+        </div>
+      </div>
+      <div className="col">
+      </div>
+    </div>
+
+    <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36303040_1.jpg" className="card-img-top" alt="Love and Thunder cocktail" />
+          
+        </div>
+      </div>
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36303036_1.jpg" className="card-img-top" alt="Seoul Station cocktail" />
+          
+        </div>
+      </div>
+      <div className="col">
+        <div className="card">
+          <img src="src\assets\img\36303042_1.jpg" className="card-img-top" alt="Pretty Woman cocktail" />
+          
+        </div>
+      </div>
+      <div className="col">
+      </div>
+    </div>
   
         <div className="row">
-          <div className="col-sm-6 mb-3 mb-sm-0">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Visit us</h5>
-                <p className="card-text">38th St. Uptown, 11th Ave, Taguig, Metro Manila</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
+  <div className="col-sm-6 mb-3 mb-sm-0">
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">Visit us</h5>
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe
+            title="Google Map"
+            className="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7096812082655!2d121.05236207362101!3d14.558587478106828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9cd1f2f2de5%3A0xe69a67dc496fade2!2sYes%20Please%20at%20The%20Palace!5e0!3m2!1ses-419!2sph!4v1706466798717!5m2!1ses-419!2sph"
+            width="100%"
+            height="300px"
+            style={{ border: "0" }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p className="card-text">38th St. Uptown, 11th Ave, Taguig, Metro Manila</p>
+      </div>
+    </div>
+  </div>
   
           <div className="col-sm-6">
             <div className="card">
