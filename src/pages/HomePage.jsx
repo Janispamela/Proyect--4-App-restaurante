@@ -1,4 +1,14 @@
+import React, { useState } from 'react';
+import {useForm} from 'react-hook-form';
+
 const HomePage = () => {
+
+  const { register, formState: { errors }, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   return (
     <>
       <header className="row col">
@@ -32,29 +42,67 @@ const HomePage = () => {
         <p className="card-text">
         Yes Please is open daily, 6pm till late.
         </p>
-        <div className="mb-3">
-          <label htmlFor="inputName" className="form-label">Name:</label>
-           <input type="text" id="inputName" className="form-control" />   
-        </div>
+<form onSubmit={handleSubmit(onSubmit)}>
+  <div className="mb-3">
+    <label htmlFor="name" className="form-label">Name:</label>
+    <input
+      type="text"
+      className="form-control"
+      id="name"
+      {...register('Name', {
+        required: true,
+      })}
+    />
+  </div>
 
-        <div>
-          <label htmlFor="inputEmail" className="form-label">Email:</label>
-           <input type="email" id="inputEmail" className="form-control" />   
-        </div>
+  <div className="mb-3">
+    <label htmlFor="email" className="form-label">Email:</label>
+    <input
+      type="text"
+      className="form-control"
+      id="email"
+      {...register('Email', {
+        required: 'Email is required',
+        pattern: {
+          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+          message: 'Invalid email address'
+        },
+      })}
+    />
+    {errors.Email && (
+      <p className="text-danger">{errors.Email.message}</p>
+    )}
+  </div>
 
-        <div>
-          <label htmlFor="inputPhone" className="form-label">Contact Number:</label>
-           <input type="tel" id="inputPhone" className="form-control" />   
-        </div>
+  <div className="mb-3">
+    <label htmlFor="number" className="form-label">Contact Number:</label>
+    <input
+      type="text"
+      className="form-control"
+      id="number"
+      {...register('Number', {
+        required: true,
+      })}
+    />
+  </div>
 
-        <div>
-          <label htmlFor="inputComments" className="form-label">Comments:</label>
-           <input type="text" id="inputComments" className="form-control" />   
-        </div>
+  <div className="mb-3">
+    <label htmlFor="comments" className="form-label">Comments:</label>
+    <textarea
+      className="form-control"
+      id="comments"
+      {...register('Comments', {
+        required: true,
+      })}
+    />
+  </div>
 
-        <div style={{ marginTop: '10px' }}>
-        <a href="#" className="btn btn-primary">Book now</a>
-        </div>
+  <div style={{ marginTop: '10px' }}>
+    <button type="submit" className="btn btn-primary">Book now</button>
+  </div>
+</form>
+
+
       </div>
     </div>
   </div>
