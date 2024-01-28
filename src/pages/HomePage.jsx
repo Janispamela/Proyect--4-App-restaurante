@@ -49,25 +49,25 @@ const HomePage = () => {
             <p className="card-text">Yes, Please is a dinner & dive bar that is known for it’s strong signature cocktail line, chill-house music, delicious food and the 90’s-vibe Instagram-worthy interiors.</p>
             <p className="card-text"><small className="text-body-secondary">The answer here is always YES.</small></p>
           </div>
-          <img src="src\assets\img\YP5.jpg" className="card-img-bottom" alt="The Palace" />
+          <img src="https://i0.wp.com/thepalacemanila.com/wp-content/uploads/2022/09/YP5.jpg?ssl=1" className="card-img-bottom" alt="The Palace" />
         </div>
  
         <div className="row row-cols-1 row-cols-md-3 g-4">
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36303033_1.jpg" className="card-img-top" alt="Menu" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36303033_1.png?0.8190771041929628" className="card-img-top" alt="Menu" />
           
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36663367_1.png" className="card-img-top" alt="Best Sellers" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36663367_1.png?0.5130036316250848" className="card-img-top" alt="Best Sellers" />
           
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36663370_1.png" className="card-img-top" alt="Food options" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36663370_1.png?0.00013927674778879684" className="card-img-top" alt="Food options" />
           
         </div>
       </div>
@@ -78,19 +78,19 @@ const HomePage = () => {
     <div className="row row-cols-1 row-cols-md-3 g-4">
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36303040_1.jpg" className="card-img-top" alt="Love and Thunder cocktail" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36303032_1.png?0.4858352861919635" className="card-img-top" alt="Furious cocktail" />
           
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36303036_1.jpg" className="card-img-top" alt="Seoul Station cocktail" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36303036_1.png?0.5104214483383525" className="card-img-top" alt="Seoul Station cocktail" />
           
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <img src="src\assets\img\36303042_1.jpg" className="card-img-top" alt="Pretty Woman cocktail" />
+          <img src="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account11844933/36303042_1.png?0.7352156564075727" className="card-img-top" alt="Pretty Woman cocktail" />
           
         </div>
       </div>
