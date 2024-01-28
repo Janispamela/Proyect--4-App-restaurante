@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
 import {useForm} from 'react-hook-form';
+import React, { useState } from 'react';
+
 
 const HomePage = () => {
 
   const { register, formState: { errors }, handleSubmit } = useForm();
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = (data) => {
     console.log(data);
   }
 
+  const loadingData = () => {
+    setLoading(true);
+    setTimeout (() => {
+      setLoading(false);
+    }, 2000);
+  }
+ 
   return (
     <>
       <header className="row col">
@@ -98,7 +107,11 @@ const HomePage = () => {
   </div>
 
   <div style={{ marginTop: '10px' }}>
-    <button type="submit" className="btn btn-primary">Book now</button>
+    <button type="submit" className="btn btn-primary" onClick={loadingData}
+    > {
+      loading ? "Booking now..." : "Book Now"
+      }
+    </button>
   </div>
 </form>
 
