@@ -1,8 +1,19 @@
-# React + Vite
+# Restaurant Website Project
+Welcome to my Restaurant Website project! This application is designed to showcase a modern and interactive website for a restaurant. It includes features like a reservation form and contact information. It was built using React and Firebase for data storage, emphasizing on responsive design and a clean user interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Key Features
+Home Section
+Menu Display
+Reservation Form
+Contact Information
+Responsive Design
 
-Currently, two official plugins are available:
+# Technologies Used
+React
+Firebase (Firestore)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Getting Started
+Clone this repository.
+Install dependencies using npm install.
+Configure Firebase credentials.
+Run the application with npm start.
