@@ -54,6 +54,7 @@ const NavBar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
+                
                 Special Offers
               </a>
               <ul className="dropdown-menu">

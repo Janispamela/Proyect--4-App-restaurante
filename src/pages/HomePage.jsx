@@ -1,7 +1,9 @@
+import Header from '../components/Header';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { db } from "../firebase/firebase";
 import { collection, addDoc } from "firebase/firestore";
+
 
 const HomePage = () => {
   const { register, formState: { errors }, handleSubmit } = useForm();
@@ -38,14 +40,13 @@ const HomePage = () => {
 
   return (
     <>
-    <header className="row col">
-      <h1>JUST SAY YES</h1>
-    </header>
+    <Header title="JUST SAY YES" />
+
     <main className="row">
       <article className="col">
         <div className="card mb-3">
           <div className="card-body">
-            <h5 className="card-title">The Palace</h5>
+            <h5 className="card-title">Yes, Please</h5>
             <p className="card-text">Yes, Please is a dinner & dive bar that is known for it’s strong signature cocktail line, chill-house music, delicious food and the 90’s-vibe Instagram-worthy interiors.</p>
             <p className="card-text"><small className="text-body-secondary">The answer here is always YES.</small></p>
           </div>
