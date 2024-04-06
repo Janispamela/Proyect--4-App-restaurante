@@ -50,7 +50,7 @@ const HomePage = () => {
             <p className="card-text">Yes, Please is a dinner & dive bar that is known for it’s strong signature cocktail line, chill-house music, delicious food and the 90’s-vibe Instagram-worthy interiors.</p>
             <p className="card-text"><small className="text-body-secondary">The answer here is always YES.</small></p>
           </div>
-          <img src="https://i0.wp.com/thepalacemanila.com/wp-content/uploads/2022/09/YP5.jpg?ssl=1" className="card-img-bottom" alt="The Palace" />
+          <img src="https://lh3.googleusercontent.com/p/AF1QipP8Z1r0ra0RpwHZ8Wjq4JSUytnxloF_LMVq-5Dw=s1360-w1360-h1020" className="card-img-bottom" alt="The Palace" />
         </div>
  
         <div className="row row-cols-1 row-cols-md-3 g-4">

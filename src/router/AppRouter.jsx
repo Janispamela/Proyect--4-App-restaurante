@@ -7,6 +7,7 @@ import {
 
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
+import BookingList from "../pages/BookingList";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
@@ -18,8 +19,9 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/bookinglist" element={<BookingList />} />
 
-          <Route path="/*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
 
